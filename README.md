@@ -16,3 +16,9 @@ run
 - python temp.py
 or
 - sh temp.sh
+---
+you can put the `sh temp.sh` on crontab to make it as schedule 
+
+`crontab -e`
+
+`*/30 * * * * sh /home/pi/temp.sh`
