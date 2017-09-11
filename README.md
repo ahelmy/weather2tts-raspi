@@ -2,7 +2,7 @@
 Play current weather and humidity on raspberry pi by tts
 This module depends on festival tts package.
 to install write 
-sudo apt-get install festival
+`sudo apt-get install festival`
 
 # First
 login to https://api.darksky.net and get an API key to get the current weather.
