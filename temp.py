@@ -3,6 +3,7 @@ import logging.handlers
 import os
 import json
 
+API_KEY = ''
 PATH = "temp.log"
 handler = logging.handlers.WatchedFileHandler(
     os.environ.get("LOGFILE", PATH))
@@ -33,7 +34,7 @@ def getTTSNumber(num):
 		num = num[0] + '0'	
 	return num
 
-url = 'https://api.darksky.net/forecast/9262895f5216c7f381227a370ef2e3a6/26.2172,50.1971'
+url = 'https://api.darksky.net/forecast/' + API_KEY + '/26.2172,50.1971'
 
 logging.info('Opening url : [{0}]...'.format(url))
 
